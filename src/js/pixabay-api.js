@@ -32,6 +32,7 @@ button.addEventListener("click", (evt)=>{
         })
         .then((photos) => {
             if (photos.hits.length === 0) {
+                gallery.innerHTML = '';
                 iziToast.error({
                     message: "Sorry, there are no images matching your search query. Please try again!",
                     position: 'topRight',
