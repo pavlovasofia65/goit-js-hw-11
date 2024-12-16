@@ -14,6 +14,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 button.addEventListener("click", (evt)=>{
     evt.preventDefault();
 
+    input.value = input.value.trim();
     load.classList.remove('hidden');
     const options = {
         key: '34921849-da8a609ca2d9d5a3e9034ffad',
